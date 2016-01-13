@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    android:layout_gravity="center_horizontal">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Chi siamo"
+        android:id="@+id/txt_chisiamo"
+        android:textColor="#ff12a215" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/txt_testochisiamo"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Dove siamo?"
+        android:id="@+id/txt_dovesiamo"
+        android:textColor="#ff12a215" />
+
+    <fragment
+        class="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:layout_weight="1.50" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Contatti"
+        android:id="@+id/txt_contatti"
+        android:layout_marginTop="20dp"
+        android:textColor="#ff12a215" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/txt_testoindirizzo"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_testotelefono"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cosa ne pensi di noi?"
+        android:id="@+id/txt_cosanepensidinoi"
+        android:textColor="#ff12a215" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rb_voto"
+        android:numStars="5"
+        android:stepSize="1"
+        android:layout_gravity="center_horizontal"
+        android:clickable="false" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invia il tuo voto"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ff12a215"/>
+
+    <TextView
+        android:id="@+id/txtVotoMedia"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Vai alla sezione  FARMACI!"
+        android:id="@+id/txt_sezionecomprafarmaco"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:textColor="#ff12a215" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LISTA FARMACI"
+        android:id="@+id/bt_sezionecomprafarmaco"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ff12a215"/>
+
+</LinearLayout>
+    </ScrollView>

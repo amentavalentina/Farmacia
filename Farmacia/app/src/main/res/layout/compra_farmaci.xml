@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    android:layout_gravity="center_horizontal">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Metodi di pagamento:"
+        android:id="@+id/textView3"
+        android:textColor="#ff12a215" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgMetodoPagamento">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contanti"
+            android:id="@+id/rb_contanti"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carta di credito"
+            android:id="@+id/rb_cartaCredito"
+            android:checked="false" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Intestatario carta di credito:"
+        android:id="@+id/tv_intestatarioCarta"
+        android:layout_gravity="left|top" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_nomeIntestatario"
+        android:layout_gravity="left|top" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Numero carta:"
+        android:id="@+id/tv_numeroCarta" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txt_numeroCarta" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Scadenza carta (mm/aa):"
+        android:id="@+id/textView2" />
+
+    <EditText
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:inputType="number"
+    android:ems="10"
+    android:id="@+id/txt_meseCarta" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txt_annoCarta" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tv_allertFarmaco"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Totale:"
+        android:id="@+id/tv_totale"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/tv_totalespesa"
+        android:layout_gravity="right"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Totale con fidaty card:"
+        android:id="@+id/tv_scontoTitolo"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/tv_scontoFidaty"
+        android:layout_gravity="right"
+        android:layout_marginTop="2dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_acquista"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ff12a215"/>
+
+</LinearLayout>
+</ScrollView>

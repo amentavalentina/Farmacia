@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content" android:orientation="vertical"
+    android:layout_width="fill_parent">
+
+    <TableRow android:layout_width="fill_parent"
+        android:id="@+id/TableRow01"
+        android:layout_height="wrap_content">
+
+        <TextView android:textColor="#000000"
+            android:id="@+id/lb_nome"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:typeface="monospace"
+            android:height="40sp"
+            android:layout_marginLeft="5dp" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Elimina" android:id="@+id/bt_eliminaRigaCarrello"
+            android:layout_marginRight="5dp" />
+        <!-- android:text="id" android:textStyle="bold"-->
+    </TableRow>
+
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+
+        <TextView android:textColor="#000000"
+            android:id="@+id/lb_dettagli"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:height="20sp"
+            android:layout_marginLeft="5dp" />
+        <!--android:text="categoryId"-->
+    </TableRow>
+
+</TableLayout>
